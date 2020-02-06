@@ -47,7 +47,7 @@ const backEndIcons = [
     useBg: true
   },
   {
-    imgPath: `${IMG_DIR_PATH}NumPy_logo.svg`,
+    imgPath: `${IMG_DIR_PATH}numpy.png`,
     useBg: false
   },
 

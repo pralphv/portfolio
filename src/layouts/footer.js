@@ -7,6 +7,8 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 import { GITHUB_PAGE, GITHUB_PORTFOLIO, LINKEDIN } from "../constants";
+import { MuiIcon } from "../features";
+import { openNewTab } from "../utils";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -31,26 +33,11 @@ const useStyles = makeStyles(theme => ({
         duration: theme.transitions.duration.shortest
       })
     }
-  },
-  icon: {
-    opacity: "80%",
-    color: "#9b9ac5",
-    cursor: "pointer",
-    "&:hover": {
-      opacity: "100%",
-      transition: theme.transitions.create("opacity", {
-        duration: theme.transitions.duration.shortest
-      })
-    }
   }
 }));
 
 export default function Footer() {
   const classes = useStyles();
-
-  function openNewTab(url) {
-    window.open(url, "_blank");
-  }
 
   return (
     <div className={classes.root}>
@@ -69,14 +56,14 @@ export default function Footer() {
         <Grid item>
           <Grid spacing={2} container direction="row" alignItems="center">
             <Grid item>
-              <LinkedInIcon
-                className={classes.icon}
+              <MuiIcon
+                iconComponent={LinkedInIcon}
                 onClick={() => openNewTab(LINKEDIN)}
               />
             </Grid>
             <Grid item>
-              <GitHubIcon
-                className={classes.icon}
+              <MuiIcon
+                iconComponent={GitHubIcon}
                 onClick={() => openNewTab(GITHUB_PAGE)}
               />
             </Grid>

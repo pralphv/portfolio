@@ -16,6 +16,13 @@ let theme = createMuiTheme({
     primary: {
       main: "#797FD0"
     }
+  },
+  overrides: {
+    MuiBackdrop: {
+      root: {
+        backgroundColor: 'rgba(0,0,0,0.5)'
+      }
+    }
   }
 });
 

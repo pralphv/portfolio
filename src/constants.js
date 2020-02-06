@@ -5,3 +5,6 @@ export const GITHUB_COLOR_SYSTEM_BUILDER = "https://github.com/pralphv/stripe_co
 export const GITHUB_PETANGLE = "https://github.com/pralphv/petangle"
 export const GITHUB_SITEMAP_GENERATOR = "https://github.com/pralphv/sitemap_generator"
 export const LINKEDIN = "https://www.linkedin.com/in/ralph-vincent-o-perez-16b378122/"
+export const PETANGLE = "https://petangle.firebaseapp.com/"
+export const COLOR_SYSTEM_BUILDER = "https://pralphv.github.io/stripe_color_system_builder/"
+export const SITEMAP_GENERATOR = "https://sitemap-generator-heroku.herokuapp.com/"

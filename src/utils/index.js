@@ -1,0 +1,1 @@
+export { openNewTab } from "./utils";
