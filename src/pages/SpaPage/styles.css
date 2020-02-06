@@ -1,0 +1,12 @@
+
+.lazy-enter,
+.lazy-appear {
+  opacity: 0;
+}
+.lazy-enter-active,
+.lazy-appear-active {
+  opacity: 1;
+  transition: all 500ms;
+}
+
+
