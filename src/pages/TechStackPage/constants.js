@@ -1,1 +1,1 @@
-export const IMG_DIR_PATH = "/images/icons/";
+export const IMG_DIR_PATH = "images/icons/";

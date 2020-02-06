@@ -57,6 +57,3 @@ Image.propTypes = {
   caption: PropTypes.string.isRequired
 };
 
-// PostList.defaultProps = {
-//   posts: [],
-// };

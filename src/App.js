@@ -16,9 +16,6 @@ let theme = createMuiTheme({
     primary: {
       main: "#797FD0"
     }
-    // secondary: {
-    // main: "#387adf"
-    // }
   }
 });
 
