@@ -5,11 +5,11 @@ import { Image, PageTitle } from "../../features";
 
 const images = [
   {
-    imgPath: "/images/color_system_builder.jpg",
+    imgPath: "images/color_system_builder.jpg",
     caption: "Color System Builder"
   },
-  { imgPath: "/images/petangle.jpg", caption: "Petangle" },
-  { imgPath: "/images/sitemap_generator.jpg", caption: "Sitemap Generator" }
+  { imgPath: "images/petangle.jpg", caption: "Petangle" },
+  { imgPath: "images/sitemap_generator.jpg", caption: "Sitemap Generator" }
 ];
 
 export default function ProjectsPage() {
