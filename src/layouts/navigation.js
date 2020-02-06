@@ -1,11 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useHistory } from "react-router-dom";
 
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import { NavigationBar } from "../features";
 import Footer from "./footer";
 
 export default function Navigation({ children }) {
@@ -18,7 +14,6 @@ export default function Navigation({ children }) {
         alignItems="center"
         justify="center"
       >
-        {/* <NavigationBar /> */}
         {children}
       </Grid>
       <Footer />
