@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/pralphv/portfolio",
+  "homepage": "https://pralphv.github.io/portfolio/",
   "dependencies": {
     "@babel/core": "7.4.3",
     "@emotion/babel-preset-css-prop": "^10.0.27",
