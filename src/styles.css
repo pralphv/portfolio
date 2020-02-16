@@ -3,3 +3,5 @@ body {
     padding: 2em;
     margin: 0;
 }
+
+ul, li { padding-left: 1em}

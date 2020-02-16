@@ -8,20 +8,21 @@ import {
   ProjectsPage,
   TechStackPage,
   AboutMePage,
-  ContactMePage
+  ContactMePage,
+  TimelinePage
 } from "../../pages";
 import { CSSTransition } from "react-transition-group";
 import "./styles.css";
 
 const useStyles = makeStyles(theme => ({
-  root: {
+  divider: {
     margin: theme.spacing(2)
   }
 }));
 
 function DividerSpaced() {
   const classes = useStyles();
-  return <Divider className={classes.root} />;
+  return <Divider className={classes.divider} />;
 }
 
 function WrappedlazyComponent({ component: Component }) {
@@ -44,6 +45,7 @@ const pageOrder = [
   LandingPage,
   ProjectsPage,
   TechStackPage,
+  TimelinePage,
   AboutMePage,
   ContactMePage
 ];
