@@ -37,7 +37,7 @@ const dialogsMap = {
     gifPath: "images/gifs/petangle.gif",
     github: GITHUB_PETANGLE,
     url: PETANGLE,
-    techStack: "React Firebase"
+    techStack: "React Firebase Python Flask Heroku"
   },
   sitemapGenerator: {
     title: "Sitemap Generator",
