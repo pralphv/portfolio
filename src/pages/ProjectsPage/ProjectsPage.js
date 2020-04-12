@@ -6,17 +6,25 @@ import {
   GITHUB_PETANGLE,
   GITHUB_SITEMAP_GENERATOR,
   GITHUB_COLOR_SYSTEM_BUILDER,
+  GITHUB_HKPORTFOLIOANALYSIS,
   PETANGLE,
   SITEMAP_GENERATOR,
-  COLOR_SYSTEM_BUILDER
+  COLOR_SYSTEM_BUILDER,
+  HKPORTFOLIOANALYSIS
 } from "../../constants";
 import {
   PETANGLE_CONTENT,
   COLOR_SYSTEM_BUILDER_CONTENT,
-  SITEMAP_GENERATOR_CONTENT
+  SITEMAP_GENERATOR_CONTENT,
+  HKPORTFOLIOANALYSIS_CONTENT
 } from "./constants";
 
 const images = [
+  {
+    imgPath: "images/gifs/hkportfolioanalysis.jpg",
+    caption: "HK Portfolio Analysis",
+    dialog: "hkportfolioanalysis"
+  },
   {
     imgPath: "images/color_system_builder.jpg",
     caption: "Color System Builder",
@@ -31,6 +39,14 @@ const images = [
 ];
 
 const dialogsMap = {
+  hkportfolioanalysis: {
+    title: "HK Portolio Analysis",
+    content: HKPORTFOLIOANALYSIS_CONTENT,
+    gifPath: "images/gifs/hkportfolioanalysis.jpg",
+    github: GITHUB_HKPORTFOLIOANALYSIS,
+    url: HKPORTFOLIOANALYSIS,
+    techStack: "React Firebase Python Pandas FastAPI Heroku"
+  },
   petangle: {
     title: "Petangle",
     content: PETANGLE_CONTENT,
@@ -67,6 +83,7 @@ export default function ProjectsPage() {
         direction="row"
         alignItems="center"
         justify="center"
+        style={{maxWidth: "900px"}}
       >
         {images.map(imgObj => (
           <Grid item key={imgObj.imgPath}>
