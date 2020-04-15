@@ -52,9 +52,15 @@ export function BankOfAmerica() {
               process, eliminating 45 minutes of manual time daily."
           />
         </li>
+        <li>
+          <BodyText
+            text="Built a web app for querying security details from multiple APIs for detecting data
+            abnormalities."
+          />
+        </li>
       </ul>
       <Typography variant="caption" color="textSecondary">
-        Python | Pandas | Numpy | Flask | JavaScript
+        Python | Pandas | Numpy | Flask | JavaScript | React
       </Typography>
     </div>
   );
