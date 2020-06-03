@@ -7,45 +7,60 @@ import {
   GITHUB_SITEMAP_GENERATOR,
   GITHUB_COLOR_SYSTEM_BUILDER,
   GITHUB_HKPORTFOLIOANALYSIS,
+  GITHUB_LOL_15_FF,
   PETANGLE,
   SITEMAP_GENERATOR,
   COLOR_SYSTEM_BUILDER,
-  HKPORTFOLIOANALYSIS
+  HKPORTFOLIOANALYSIS,
 } from "../../constants";
 import {
   PETANGLE_CONTENT,
   COLOR_SYSTEM_BUILDER_CONTENT,
   SITEMAP_GENERATOR_CONTENT,
-  HKPORTFOLIOANALYSIS_CONTENT
+  HKPORTFOLIOANALYSIS_CONTENT,
+  LOL_15_FF_CONTENT,
 } from "./constants";
 
 const images = [
   {
+    imgPath: "images/gifs/lol_15_ff.jpg",
+    caption: "Lol 15ff",
+    dialog: "lol15ff",
+  },
+  {
     imgPath: "images/gifs/hkportfolioanalysis.jpg",
     caption: "HK Portfolio Analysis",
-    dialog: "hkportfolioanalysis"
+    dialog: "hkportfolioanalysis",
   },
   {
     imgPath: "images/color_system_builder.jpg",
     caption: "Color System Builder",
-    dialog: "colorSystemBuilder"
+    dialog: "colorSystemBuilder",
   },
   { imgPath: "images/petangle.jpg", caption: "Petangle", dialog: "petangle" },
   {
     imgPath: "images/sitemap_generator.jpg",
     caption: "Sitemap Generator",
-    dialog: "sitemapGenerator"
-  }
+    dialog: "sitemapGenerator",
+  },
 ];
 
 const dialogsMap = {
+  lol15ff: {
+    title: "Lol 15ff",
+    content: LOL_15_FF_CONTENT,
+    gifPath: "images/gifs/lol_15_ff.jpg",
+    github: GITHUB_LOL_15_FF,
+    url: null,
+    techStack: "Python Pandas Flask scikit-learn HTML JavaScript Heroku",
+  },
   hkportfolioanalysis: {
     title: "HK Portolio Analysis",
     content: HKPORTFOLIOANALYSIS_CONTENT,
     gifPath: "images/gifs/hkportfolioanalysis.jpg",
     github: GITHUB_HKPORTFOLIOANALYSIS,
     url: HKPORTFOLIOANALYSIS,
-    techStack: "React Firebase Python Pandas FastAPI Heroku"
+    techStack: "React Firebase Python Pandas FastAPI Heroku",
   },
   petangle: {
     title: "Petangle",
@@ -53,7 +68,7 @@ const dialogsMap = {
     gifPath: "images/gifs/petangle.gif",
     github: GITHUB_PETANGLE,
     url: PETANGLE,
-    techStack: "React Firebase Python Flask Heroku"
+    techStack: "React Firebase Python Flask Heroku",
   },
   sitemapGenerator: {
     title: "Sitemap Generator",
@@ -61,7 +76,7 @@ const dialogsMap = {
     gifPath: "images/gifs/sitemap_generator.gif",
     github: GITHUB_SITEMAP_GENERATOR,
     url: SITEMAP_GENERATOR,
-    techStack: "Javascript Python Flask Heroku"
+    techStack: "Javascript Python Flask Heroku",
   },
   colorSystemBuilder: {
     title: "Color System Builder",
@@ -69,8 +84,8 @@ const dialogsMap = {
     gifPath: "images/gifs/color_system_builder.gif",
     github: GITHUB_COLOR_SYSTEM_BUILDER,
     url: COLOR_SYSTEM_BUILDER,
-    techStack: "React GithubPages"
-  }
+    techStack: "TypeScript Firebase GithubPages",
+  },
 };
 
 export default function ProjectsPage() {
@@ -83,9 +98,9 @@ export default function ProjectsPage() {
         direction="row"
         alignItems="center"
         justify="center"
-        style={{maxWidth: "900px"}}
+        style={{ maxWidth: "900px" }}
       >
-        {images.map(imgObj => (
+        {images.map((imgObj) => (
           <Grid item key={imgObj.imgPath}>
             <Image
               gifPath={dialogsMap[imgObj.dialog].gifPath}

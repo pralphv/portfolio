@@ -15,26 +15,26 @@ import { MuiIcon } from "../../features";
 import { openNewTab } from "../../utils";
 import { GITHUB_PETANGLE, PETANGLE } from "../../constants";
 
-const DialogContent = withStyles(theme => ({
+const DialogContent = withStyles((theme) => ({
   root: {
-    padding: theme.spacing(2)
-  }
+    padding: theme.spacing(2),
+  },
 }))(MuiDialogContent);
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   gif: {
     height: "auto",
     width: "100%",
     padding: theme.spacing(1),
-    maxHeight: "217px"
+    maxHeight: "217px",
   },
   techStack: {
     fontWeight: 300,
     wordSpacing: "2em",
     color: "#9b9ac5",
     paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(2)
-  }
+    paddingBottom: theme.spacing(2),
+  },
 }));
 
 export default function CustomDialog({
@@ -45,7 +45,7 @@ export default function CustomDialog({
   url,
   techStack,
   open,
-  handleClose
+  handleClose,
 }) {
   const isMobile = useMediaQuery("(max-width:600px)");
   const classes = useStyles();
@@ -63,8 +63,8 @@ export default function CustomDialog({
       PaperProps={{
         style: {
           backgroundColor: "#212121",
-          boxShadow: "none"
-        }
+          boxShadow: "none",
+        },
       }}
     >
       <DialogContent>
@@ -82,12 +82,14 @@ export default function CustomDialog({
                   onClick={() => openNewTab(github)}
                 />
               </Grid>
-              <Grid item>
-                <MuiIcon
-                  iconComponent={LinkIcon}
-                  onClick={() => openNewTab(url)}
-                />
-              </Grid>
+              {url && (
+                <Grid item>
+                  <MuiIcon
+                    iconComponent={LinkIcon}
+                    onClick={() => openNewTab(url)}
+                  />
+                </Grid>
+              )}
             </Grid>
           </Grid>
           <Grid item xs={gifWidth}>
@@ -104,9 +106,8 @@ CustomDialog.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  url: PropTypes.string,
   techStack: PropTypes.string.isRequired,
   open: PropTypes.bool.isRequired,
   handleClose: PropTypes.func.isRequired,
 };
-

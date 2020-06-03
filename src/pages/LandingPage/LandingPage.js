@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(2),
     textTransform: "uppercase",
@@ -15,15 +15,16 @@ const useStyles = makeStyles(theme => ({
     marginTop: "-1em",
     letterSpacing: "0.5em",
     wordSpacing: "0.4em",
-    fontWeight: "400"
+    fontWeight: "400",
   },
   subTitle: {
-    letterSpacing: "0.4em"
-  }
+    letterSpacing: "0.4em",
+  },
 }));
 
 export default function LandingPage() {
   const classes = useStyles();
+
   return (
     <div>
       <Grid
