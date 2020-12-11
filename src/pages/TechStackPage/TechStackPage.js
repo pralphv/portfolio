@@ -77,6 +77,10 @@ const dbIcons = [
     imgPath: `${IMG_DIR_PATH}MongoDB_Logo.svg`,
     useBg: false
   },
+  {
+    imgPath: `${IMG_DIR_PATH}redis.png`,
+    useBg: false
+  },
 ];
 
 export default function TechStackPage() {

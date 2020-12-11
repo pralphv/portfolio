@@ -7,12 +7,12 @@ import Button from "@material-ui/core/Button";
 
 import { PageTitle } from "../../features";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   paragraph: {
     padding: theme.spacing(1),
     lineHeight: "2em",
-    fontWeight: "300"
-  }
+    fontWeight: "300",
+  },
 }));
 
 export default function AboutMePage() {
@@ -34,12 +34,12 @@ export default function AboutMePage() {
             variant="body2"
             align="center"
           >
-            Despite graduating with an Accounting & Finance Degree from The
-            University of Hong Kong, my passion in technology led me to pursue a
-            career in technology. Knowing the disadvantage that I have put
-            myself in by not having a Computer Science degree, I work hard to
-            close the gap between me and Computer Science graduates. I am now
-            fairly confident to say that I am a competent developer.
+            Despite graduating with an Accounting & Finance Degree, my passion
+            in technology led me to pursue a career in technology. Knowing the
+            disadvantage that I have put myself in by not having a Computer
+            Science degree, I work hard to close the gap between me and Computer
+            Science graduates. I am now confident to say that I am a competent
+            developer.
           </Typography>
         </Grid>
         <Grid item>
@@ -48,9 +48,10 @@ export default function AboutMePage() {
             variant="body2"
             align="center"
           >
-            Currently, I am working in an international investment bank where I
-            focus on automation. Cutting manual work and reducing operational
-            risks are ways I bring value.
+            Currently, I am working in a hedge fund as a full-stack developer
+            with a small team. Workload is high, fast-paced and sometimes
+            stressful, but ultimately rewarding as I am able to hone my skills
+            and make meaningful contributions.
           </Typography>
         </Grid>
         <Grid item>

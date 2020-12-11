@@ -31,6 +31,27 @@ export function Cfa() {
   );
 }
 
+export function Segantii() {
+  return (
+    <div>
+      <Title text="Front Office Developer" />
+      <Subtitle text="Segantii Capital Management Limited" />
+      <ul>
+        <li>
+          <BodyText text="Developing and maintaining a web app mainly for front office users, and for other departments such as risk management." />
+        </li>
+        <li>
+          <BodyText text="Involved in all parts of the stack" />
+        </li>
+      </ul>
+      <Typography variant="caption" color="textSecondary">
+        Python | Pandas | Numpy | Flask | React | MongoDB | Microsoft SQL |
+        Redis
+      </Typography>
+    </div>
+  );
+}
+
 export function BankOfAmerica() {
   return (
     <div>

@@ -8,10 +8,12 @@ import {
   GITHUB_COLOR_SYSTEM_BUILDER,
   GITHUB_HKPORTFOLIOANALYSIS,
   GITHUB_LOL_15_FF,
+  GITHUB_ENSOU,
   PETANGLE,
   SITEMAP_GENERATOR,
   COLOR_SYSTEM_BUILDER,
   HKPORTFOLIOANALYSIS,
+  ENSOU,
 } from "../../constants";
 import {
   PETANGLE_CONTENT,
@@ -19,9 +21,15 @@ import {
   SITEMAP_GENERATOR_CONTENT,
   HKPORTFOLIOANALYSIS_CONTENT,
   LOL_15_FF_CONTENT,
+  ENSOU_CONTENT,
 } from "./constants";
 
 const images = [
+  {
+    imgPath: "images/ensou.jpg",
+    caption: "Ensou",
+    dialog: "ensou",
+  },
   {
     imgPath: "images/gifs/lol_15_ff.jpg",
     caption: "Lol 15ff",
@@ -86,6 +94,15 @@ const dialogsMap = {
     url: COLOR_SYSTEM_BUILDER,
     techStack: "TypeScript Firebase GithubPages",
   },
+  ensou: {
+    title: "Ensou",
+    content: ENSOU_CONTENT,
+    gifPath: "images/gifs/ensou.gif",
+    github: GITHUB_ENSOU,
+    url: ENSOU,
+    techStack: "TypeScript Firebase",
+    youtubeUrl: "https://www.youtube.com/watch?v=Jj1ZJEFVpMk",
+  },
 };
 
 export default function ProjectsPage() {
@@ -109,6 +126,7 @@ export default function ProjectsPage() {
               github={dialogsMap[imgObj.dialog].github}
               url={dialogsMap[imgObj.dialog].url}
               techStack={dialogsMap[imgObj.dialog].techStack}
+              youtubeUrl={dialogsMap[imgObj.dialog].youtubeUrl}
               imgPath={imgObj.imgPath}
               caption={imgObj.caption}
             />

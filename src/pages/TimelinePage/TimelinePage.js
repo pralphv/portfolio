@@ -37,8 +37,13 @@ export default function TimelinePage() {
   return (
     <div className={classes.root}>
       <VerticalTimeline>
+      <CustomVerticalTimelineElement
+          date="Jun 2018 - Present"
+          icon={WorkIcon}
+          content={TimelineElements.Segantii}
+        />
         <CustomVerticalTimelineElement
-          date="Nov 2018 - present"
+          date="Nov 2018 - Jun 2020"
           icon={WorkIcon}
           content={TimelineElements.BankOfAmerica}
         />

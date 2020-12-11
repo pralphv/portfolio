@@ -38,7 +38,8 @@ export default function Image({
   content,
   github,
   url,
-  techStack
+  techStack,
+  youtubeUrl
 }) {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
@@ -78,6 +79,7 @@ export default function Image({
         techStack={techStack}
         open={open}
         handleClose={handleClose}
+        youtubeUrl={youtubeUrl}
       />
     </div>
   );

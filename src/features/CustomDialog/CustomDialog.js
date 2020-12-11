@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -10,10 +10,10 @@ import { Typography } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 
 import { MuiIcon } from "../../features";
 import { openNewTab } from "../../utils";
-import { GITHUB_PETANGLE, PETANGLE } from "../../constants";
 
 const DialogContent = withStyles((theme) => ({
   root: {
@@ -46,6 +46,7 @@ export default function CustomDialog({
   techStack,
   open,
   handleClose,
+  youtubeUrl,
 }) {
   const isMobile = useMediaQuery("(max-width:600px)");
   const classes = useStyles();
@@ -90,6 +91,14 @@ export default function CustomDialog({
                   />
                 </Grid>
               )}
+              {youtubeUrl && (
+                <Grid item>
+                  <MuiIcon
+                    iconComponent={YouTubeIcon}
+                    onClick={() => openNewTab(youtubeUrl)}
+                  />
+                </Grid>
+              )}
             </Grid>
           </Grid>
           <Grid item xs={gifWidth}>
@@ -110,4 +119,5 @@ CustomDialog.propTypes = {
   techStack: PropTypes.string.isRequired,
   open: PropTypes.bool.isRequired,
   handleClose: PropTypes.func.isRequired,
+  youtubeUrl: PropTypes.string,
 };
