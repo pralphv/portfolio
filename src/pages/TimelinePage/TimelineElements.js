@@ -38,10 +38,16 @@ export function Segantii() {
       <Subtitle text="Segantii Capital Management Limited" />
       <ul>
         <li>
-          <BodyText text="Developing and maintaining a web app mainly for front office users, and for other departments such as risk management." />
+          <BodyText text="Developing and maintaining a web app (React, Python) that provides a platform to create dashboards for traders, analysts, risk management etc." />
         </li>
         <li>
-          <BodyText text="Involved in all parts of the stack" />
+          <BodyText text="Replaced manual processes and VBA scripts with automated scripts" />
+        </li>
+        <li>
+          <BodyText text="Cooperate with traders to create backtesting tools and strategy researching" />
+        </li>
+        <li>
+          <BodyText text="Created a monitoring system for system health checks and outage detection" />
         </li>
       </ul>
       <Typography variant="caption" color="textSecondary">
