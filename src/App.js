@@ -2,7 +2,7 @@ import React from "react";
 import {
   createMuiTheme,
   ThemeProvider,
-  responsiveFontSizes
+  responsiveFontSizes,
 } from "@material-ui/core/styles";
 
 import "./styles.css";
@@ -14,16 +14,16 @@ let theme = createMuiTheme({
     type: "dark",
     background: "#151515",
     primary: {
-      main: "#797FD0"
-    }
+      main: "#797FD0",
+    },
   },
   overrides: {
     MuiBackdrop: {
       root: {
-        backgroundColor: 'rgba(0,0,0,0.5)'
-      }
-    }
-  }
+        backgroundColor: "rgba(0,0,0,0.5)",
+      },
+    },
+  },
 });
 
 theme = responsiveFontSizes(theme);
