@@ -10,6 +10,7 @@ import WorkIcon from "@material-ui/icons/Work";
 import SchoolIcon from "@material-ui/icons/School";
 
 import * as TimelineElements from "./TimelineElements";
+import "./styles.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {

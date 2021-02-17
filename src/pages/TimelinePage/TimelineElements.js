@@ -1,7 +1,11 @@
 import { Typography } from "@material-ui/core";
 
 function Title({ text }) {
-  return <h3 className="vertical-timeline-element-title">{text}</h3>;
+  return (
+    <h3 className="vertical-timeline-element-title" style={{ fontWeight: 900 }}>
+      {text}
+    </h3>
+  );
 }
 
 function Subtitle({ text }) {
