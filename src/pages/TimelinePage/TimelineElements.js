@@ -69,11 +69,11 @@ export function BankOfAmerica() {
       <Subtitle text="Bank of America" />
       <ul>
         <li>
-          <BodyText text="Automation and Data visualization" />
+          <BodyText text="Data analysis, visualization and automation" />
         </li>
         <li>
           <BodyText
-            text="Built a web app to replace VBA, cutting execution time from 10
+            text="Built a web app to replace a VBA script, cutting execution time from 10
               minutes to less than 10 seconds."
           />
         </li>
@@ -109,12 +109,6 @@ export function Shenwan() {
 to trade."
           />
         </li>
-        <li>
-          <BodyText
-            text="Monitored daily performance of strategies and provided technical support and services
-            for clients, etc. coding strategies."
-          />
-        </li>
       </ul>
     </div>
   );
@@ -127,16 +121,10 @@ export function ChinaMerchants() {
       <Subtitle text="China Merchants Bank International Securities Limited" />
       <ul>
         <li>
-          <BodyText text="Moved with manager from Shenwan Hongyuan (H.K) Limited." />
-        </li>
-        <li>
           <BodyText
             text="Responsible for algorithm trading projects that aimed to increase trading volume and
               number of active users."
           />
-        </li>
-        <li>
-          <BodyText text="Worked with AI companies to incorporate products into brokerage business." />
         </li>
       </ul>
     </div>
