@@ -3,7 +3,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   VerticalTimeline,
-  VerticalTimelineElement
+  VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import WorkIcon from "@material-ui/icons/Work";
@@ -11,17 +11,17 @@ import SchoolIcon from "@material-ui/icons/School";
 
 import * as TimelineElements from "./TimelineElements";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: "60em"
-  }
+    maxWidth: "60em",
+  },
 }));
 
 function CustomVerticalTimelineElement({ date, content: Content, icon: Icon }) {
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: "#1f1f1f", color: "#fff"}}
+      contentStyle={{ background: "#1f1f1f", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid  #1f1f1f" }}
       date={date}
       iconStyle={{ background: "#1f1f1f", color: "#fff" }}
@@ -37,7 +37,7 @@ export default function TimelinePage() {
   return (
     <div className={classes.root}>
       <VerticalTimeline>
-      <CustomVerticalTimelineElement
+        <CustomVerticalTimelineElement
           date="Jun 2020 - Present"
           icon={WorkIcon}
           content={TimelineElements.Segantii}
