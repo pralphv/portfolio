@@ -4,91 +4,69 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import { Icon, PageTitle } from "../../features";
 import { IMG_DIR_PATH } from "./constants";
+import {
+  DiHtml5,
+  DiCss3,
+  DiJavascript1,
+  DiPython,
+  DiMsqlServer,
+  DiPostgresql,
+  DiMongodb,
+  DiReact,
+  DiRedis,
+  DiPhotoshop,
+  DiDjango,
+} from "react-icons/di";
+import { SiFlask, SiFirebase, SiTypescript } from "react-icons/si";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   title: {
     margin: theme.spacing(2),
     textTransform: "uppercase",
     letterSpacing: "0.2em",
-    fontWeight: "300"
-  }
+    fontWeight: "300",
+  },
 }));
 
 const frontEndIcons = [
-  {
-    imgPath: `${IMG_DIR_PATH}HTML5_logo_and_wordmark.svg`,
-    useBg: true
-  },
-  {
-    imgPath: `${IMG_DIR_PATH}CSS3_logo_and_wordmark.svg`,
-    useBg: true
-  },
-  {
-    imgPath: `${IMG_DIR_PATH}Unofficial_JavaScript_logo_2.svg`,
-    useBg: false
-  },
-  {
-    imgPath: `${IMG_DIR_PATH}ts.png`,
-    useBg: false
-  },
-  {
-    imgPath: `${IMG_DIR_PATH}React-icon.svg`,
-    useBg: false
-  }
+  { isIcon: true, icon: DiHtml5 },
+  { isIcon: true, icon: DiCss3 },
+  { isIcon: true, icon: DiJavascript1 },
+  { isIcon: true, icon: SiTypescript },
+  { isIcon: true, icon: DiReact },
 ];
 
 const backEndIcons = [
-  {
-    imgPath: `${IMG_DIR_PATH}Python-logo-notext.svg`,
-    useBg: false
-  },
+  { isIcon: true, icon: DiPython },
+
   {
     imgPath: `${IMG_DIR_PATH}pandas_secondary.svg`,
-    useBg: true
+    useBg: true,
   },
   {
     imgPath: `${IMG_DIR_PATH}numpy.png`,
-    useBg: false
+    useBg: false,
   },
-
-  {
-    imgPath: `${IMG_DIR_PATH}flask-seeklogo.com.svg`,
-    useBg: true
-  },
-  {
-    imgPath: `${IMG_DIR_PATH}django-logo-negative.svg`,
-    useBg: false
-  }
+  { isIcon: true, icon: SiFlask },
+  { isIcon: true, icon: DiDjango },
 ];
 const dbIcons = [
-  {
-    imgPath: `${IMG_DIR_PATH}Antu_mysql-workbench.svg`,
-    useBg: false
-  },
-  {
-    imgPath: `${IMG_DIR_PATH}Postgresql_elephant.svg`,
-    useBg: false
-  },
-  {
-    imgPath: `${IMG_DIR_PATH}Firebase_Logo.svg`,
-    useBg: true
-  },
-  {
-    imgPath: `${IMG_DIR_PATH}MongoDB_Logo.svg`,
-    useBg: false
-  },
-  {
-    imgPath: `${IMG_DIR_PATH}redis.png`,
-    useBg: false
-  },
+  { isIcon: true, icon: DiPostgresql },
+  { isIcon: true, icon: DiMsqlServer },
+  { isIcon: true, icon: SiFirebase },
+  { isIcon: true, icon: DiMongodb },
+  { isIcon: true, icon: DiRedis },
 ];
+
+const miscIcons = [{ isIcon: true, icon: DiPhotoshop }];
 
 export default function TechStackPage() {
   const classes = useStyles();
-  const allIcons = [frontEndIcons, backEndIcons, dbIcons];
+  const allIcons = [frontEndIcons, backEndIcons, dbIcons, miscIcons];
   return (
     <div>
       <PageTitle text="Tech Stack" />
+
       {allIcons.map((images, i) => (
         <Grid
           key={i}
@@ -98,11 +76,15 @@ export default function TechStackPage() {
           alignItems="center"
           justify="center"
         >
-          {images.map(imgObj => (
-            <Grid item key={imgObj.imgPath}>
-              <Icon imgPath={imgObj.imgPath} useBg={imgObj.useBg} />
-            </Grid>
-          ))}
+          {images.map((imgObj) => {
+            return imgObj.isIcon ? (
+              <imgObj.icon size="5em" />
+            ) : (
+              <Grid item key={imgObj.imgPath}>
+                <Icon imgPath={imgObj.imgPath} useBg={imgObj.useBg} />
+              </Grid>
+            );
+          })}
         </Grid>
       ))}
     </div>

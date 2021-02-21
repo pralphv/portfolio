@@ -55,6 +55,7 @@
     "react-app-polyfill": "^1.0.1",
     "react-dev-utils": "^9.0.1",
     "react-dom": "^16.8.6",
+    "react-icons": "^4.2.0",
     "react-lazyload": "^2.6.5",
     "react-transition-group": "^4.3.0",
     "react-vertical-timeline-component": "^2.5.0",
