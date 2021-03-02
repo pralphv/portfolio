@@ -10,3 +10,5 @@ export const LOL_15_FF_CONTENT =
   "An app for League of Legends that provides convenient tools. Also has a model built with machine learning for predicting which team will win.";
 export const ENSOU_CONTENT =
   "A Synthesia-like app that plays midi files and visualizes musical notes. Users can create their own synthesizers or use samples to play MIDIs in the tone they want. Effectors such as reverbs and delays are also available.";
+export const BUDDY_CHAMP_CONTENT =
+  "A miniature op.gg web app. Collects and aggregates game data from Taiwan server, then provides a table of partner champions with the highest win rate given a champion.";

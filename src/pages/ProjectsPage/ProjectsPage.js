@@ -9,11 +9,13 @@ import {
   GITHUB_HKPORTFOLIOANALYSIS,
   GITHUB_LOL_15_FF,
   GITHUB_ENSOU,
+  GITHUB_BUDDY_CHAMP,
   PETANGLE,
   SITEMAP_GENERATOR,
   COLOR_SYSTEM_BUILDER,
   HKPORTFOLIOANALYSIS,
   ENSOU,
+  BUDDY_CHAMP,
 } from "../../constants";
 import {
   PETANGLE_CONTENT,
@@ -22,6 +24,7 @@ import {
   HKPORTFOLIOANALYSIS_CONTENT,
   LOL_15_FF_CONTENT,
   ENSOU_CONTENT,
+  BUDDY_CHAMP_CONTENT
 } from "./constants";
 
 const images = [
@@ -29,6 +32,11 @@ const images = [
     imgPath: "images/ensou.jpg",
     caption: "Ensou",
     dialog: "ensou",
+  },
+  {
+    imgPath: "images/buddy_champ.JPG",
+    caption: "Buddy Champ JJ",
+    dialog: "buddychampjj",
   },
   {
     imgPath: "images/gifs/lol_15_ff.jpg",
@@ -54,6 +62,14 @@ const images = [
 ];
 
 const dialogsMap = {
+  buddychampjj: {
+    title: "Buddy Champ JJ",
+    content: BUDDY_CHAMP_CONTENT,
+    gifPath: "images/buddy_champ.JPG",
+    github: GITHUB_BUDDY_CHAMP,
+    url: BUDDY_CHAMP,
+    techStack: "Python Firebase React",
+  },
   lol15ff: {
     title: "Lol 15ff",
     content: LOL_15_FF_CONTENT,

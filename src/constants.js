@@ -10,6 +10,7 @@ export const GITHUB_HKPORTFOLIOANALYSIS =
   "https://github.com/pralphv/hkportfolioanalysis-frontend";
 export const GITHUB_LOL_15_FF = "https://github.com/pralphv/lol_15ff";
 export const GITHUB_ENSOU = "https://github.com/pralphv/ensou";
+export const GITHUB_BUDDY_CHAMP = "https://github.com/pralphv/buddy-champ-jj-frontend";
 
 export const LINKEDIN =
   "https://www.linkedin.com/in/ralph-vincent-o-perez-16b378122/";
@@ -21,3 +22,4 @@ export const SITEMAP_GENERATOR =
 export const HKPORTFOLIOANALYSIS =
   "https://hkportfolioanalysis.firebaseapp.com/";
 export const ENSOU = "https://ensou-d031f.web.app/";
+export const BUDDY_CHAMP = "https://buddy-champ-jj.firebaseapp.com/";
