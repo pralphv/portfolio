@@ -49,7 +49,7 @@ export default function TimelinePage() {
           content={TimelineElements.BankOfAmerica}
         />
         <CustomVerticalTimelineElement
-          date="Jul 2017 - Oct 2018"
+          date="Jul 2018 - Oct 2018"
           icon={WorkIcon}
           content={TimelineElements.ChinaMerchants}
         />
