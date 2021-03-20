@@ -42,10 +42,10 @@ export function Segantii() {
       <Subtitle text="Segantii Capital Management Limited" />
       <ul>
         <li>
-          <BodyText text="Developing and maintaining a web app (React, Python) that provides a platform to create dashboards for traders, analysts, risk management etc." />
+          <BodyText text="Developing and maintaining a web app (React, Python) that provides a platform to create dashboards for non-developers, etc. traders and analysts, enabling teams to have customized dashboards even without developers." />
         </li>
         <li>
-          <BodyText text="Replaced manual processes and VBA scripts with automated scripts" />
+          <BodyText text="Replaced manual processes and VBA scripts with automated scripts, decreasing runtimes, complexities, errors and maintenance efforts" />
         </li>
         <li>
           <BodyText text="Cooperate with traders to create backtesting tools and strategy researching" />
@@ -121,10 +121,7 @@ export function ChinaMerchants() {
       <Subtitle text="China Merchants Bank International Securities Limited" />
       <ul>
         <li>
-          <BodyText
-            text="Responsible for algorithm trading projects that aimed to increase trading volume and
-              number of active users."
-          />
+          <BodyText text="Responsible for algorithm trading projects that aimed to increase trading volume." />
         </li>
       </ul>
     </div>
