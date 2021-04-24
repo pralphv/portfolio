@@ -84,15 +84,15 @@ export function BankOfAmerica() {
         <li>
           <BodyText
             text="Proposed and implemented a web dashboard to replace a VBA semi-manual
-              email process with Python and HTML. Eliminated 15 minutes manual time, 3 
+              email process with Python and HTML. Eliminated 15 minutes of manual time, 3 
               times a day, into a fully automated dashboard that updates in 10 min intervals."
           />
         </li>
         <li>
           <BodyText
             text="Revamped a product-searching tool from a VBA script to a Python GUI, 
-            cutting queries from 10 minutes to less than 10 seconds, ultimatelely improving
-            client email reponse time."
+            cutting queries from 10 minutes to less than 10 seconds, ultimately improving
+            client email response time."
           />
         </li>
         <li>
