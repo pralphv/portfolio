@@ -50,7 +50,7 @@ export default function LandingPage() {
             variant="h5"
             align="center"
           >
-            Front Office Developer
+            Full Stack Developer
           </Typography>
         </Grid>
       </Grid>

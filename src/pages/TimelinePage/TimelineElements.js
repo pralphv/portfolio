@@ -42,13 +42,23 @@ export function Segantii() {
       <Subtitle text="Segantii Capital Management Limited" />
       <ul>
         <li>
-          <BodyText text="Developing and maintaining a web app (React, Python) that provides a platform to create dashboards for non-developers, etc. traders and analysts, enabling teams to have customized dashboards even without developers." />
+          <BodyText
+            text="Developing and maintaining a web app (React, Python) that provides 
+          a platform to create dashboards for non-developers, etc. traders and analysts, 
+          enabling teams to have customized dashboards even without developers."
+          />
         </li>
         <li>
-          <BodyText text="Replaced manual processes and VBA scripts with automated scripts, decreasing runtimes, complexities, errors and maintenance efforts" />
+          <BodyText
+            text="Replaced manual processes and VBA scripts with automated scripts, 
+          decreasing runtimes, complexities, errors and maintenance efforts"
+          />
         </li>
         <li>
-          <BodyText text="Cooperate with traders to create backtesting tools and strategy researching" />
+          <BodyText
+            text="Cooperate with traders to create backtesting tools, automated 
+            report generation and strategy researching, ultimately used for trading decisions."
+          />
         </li>
         <li>
           <BodyText text="Created a monitoring system for system health checks and outage detection" />
@@ -73,14 +83,16 @@ export function BankOfAmerica() {
         </li>
         <li>
           <BodyText
-            text="Built a web app to replace a VBA script, cutting execution time from 10
-              minutes to less than 10 seconds."
+            text="Proposed and implemented a web dashboard to replace a VBA semi-manual
+              email process with Python and HTML. Eliminated 15 minutes manual time, 3 
+              times a day, into a fully automated dashboard that updates in 10 min intervals."
           />
         </li>
         <li>
           <BodyText
-            text="Built a web notification dashboard to replace a VBA semi-manual
-              process, eliminating 45 minutes of manual time daily."
+            text="Revamped a product-searching tool from a VBA script to a Python GUI, 
+            cutting queries from 10 minutes to less than 10 seconds, ultimatelely improving
+            client email reponse time."
           />
         </li>
         <li>
