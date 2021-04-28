@@ -43,25 +43,23 @@ export function Segantii() {
       <ul>
         <li>
           <BodyText
-            text="Developing and maintaining a web app (React, Python) that provides 
-          a platform to create dashboards for non-developers, etc. traders and analysts, 
-          enabling teams to have customized dashboards even without developers."
+            text="Lead developer for a React app that allows users to quickly and 
+          easily create dashboards with AG Grid and Plotly, cutting firm-wide 
+          development costs"
           />
         </li>
         <li>
           <BodyText
-            text="Replaced manual processes and VBA scripts with automated scripts, 
-          decreasing runtimes, complexities, errors and maintenance efforts"
+            text="Replaced manual processes and VBA scripts with automated Python scripts, 
+            decreasing runtimes, complexities, errors and maintenance efforts"
           />
         </li>
         <li>
           <BodyText
-            text="Cooperate with traders to create backtesting tools, automated 
-            report generation and strategy researching, ultimately used for trading decisions."
+            text="Cooperated with traders to create backtesting tools, automated reports 
+            and strategy researching by leveraging data engineering stacks such 
+            as Pandas and Jupyter"
           />
-        </li>
-        <li>
-          <BodyText text="Created a monitoring system for system health checks and outage detection" />
         </li>
       </ul>
       <Typography variant="caption" color="textSecondary">
@@ -83,22 +81,34 @@ export function BankOfAmerica() {
         </li>
         <li>
           <BodyText
-            text="Proposed and implemented a web dashboard to replace a VBA semi-manual
-              email process with Python and HTML. Eliminated 15 minutes of manual time, 3 
-              times a day, into a fully automated dashboard that updates in 10 min intervals."
+            text="Proposed and implemented a web dashboard using Python, 
+            JavaScript and HTML to replace a manual email report that was done 3 times a day, 
+            15 minutes each"
           />
         </li>
         <li>
           <BodyText
             text="Revamped a product-searching tool from a VBA script to a Python GUI, 
-            cutting queries from 10 minutes to less than 10 seconds, ultimately improving
-            client email response time."
+            cutting queries from 10 minutes to less than 10 seconds"
           />
         </li>
         <li>
           <BodyText
-            text="Built a web app for querying security details from multiple APIs for detecting data
-            abnormalities."
+            text="Aggregated activity logs using Pandas which was used for a Tableau 
+            dashboard for management to evaluate employee activity"
+          />
+        </li>
+        <li>
+          <BodyText
+            text="Created a web page that uses JavaScript to manipulate a SharePoint List 
+            that powers a Python rule-based tagging script, helping users centralize and 
+            document identified rules and replace a manual tagging process"
+          />
+        </li>
+        <li>
+          <BodyText
+            text="Built a prototype React app for querying security details 
+          from multiple APIs for detecting data abnormalities"
           />
         </li>
       </ul>
