@@ -77,9 +77,6 @@ export function BankOfAmerica() {
       <Subtitle text="Bank of America" />
       <ul>
         <li>
-          <BodyText text="Data analysis, visualization and automation" />
-        </li>
-        <li>
           <BodyText
             text="Proposed and implemented a web dashboard using Python, 
             JavaScript and HTML to replace a manual email report that was done 3 times a day, 
