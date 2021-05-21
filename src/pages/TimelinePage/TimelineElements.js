@@ -38,27 +38,52 @@ export function Cfa() {
 export function Segantii() {
   return (
     <div>
-      <Title text="Front Office Developer" />
+      <Title text="Full-Stack Developer" />
       <Subtitle text="Segantii Capital Management Limited" />
       <ul>
         <li>
           <BodyText
-            text="Lead developer for a React app that allows users to quickly and 
-          easily create dashboards with AG Grid and Plotly, cutting firm-wide 
-          development costs"
+            text="Developer for a React app that allows users to quickly and easily 
+            create dashboards with AG Grid and Plotly, cutting firm-wide development costs and time"
           />
         </li>
         <li>
           <BodyText
-            text="Replaced manual processes and VBA scripts with automated Python scripts, 
+            text="Implemented a bookmarking feature with bookmarks persisted with 
+            MongoDB, currently being used by most users"
+          />
+        </li>
+        <li>
+          <BodyText
+            text="Integrated Microsoft Graph API to allow creating highly customized 
+            calendars in the browser while remaining synchronized with Outlook"
+          />
+        </li>
+        <li>
+          <BodyText text="Wrote detailed documentation with real use cases for users, reducing user enquiries by 90%" />
+        </li>
+        <li>
+          <BodyText
+            text="Detected slow and blocking Microsoft SQL queries with Server Management Studio 
+            and improved them by indexing appropriate columns"
+          />
+        </li>
+        <li>
+          <BodyText
+            text="Refactored a Redis caching logic and improved cache hits by 20%, 
+            reducing daily limited  Bloomberg API calls"
+          />
+        </li>
+        <li>
+          <BodyText
+            text="Replaced manual processes and Excel/VBA with automated Python scripts, 
             decreasing runtimes, complexities, errors and maintenance efforts"
           />
         </li>
         <li>
           <BodyText
             text="Cooperated with traders to create backtesting tools, automated reports 
-            and strategy researching by leveraging data engineering stacks such 
-            as Pandas and Jupyter"
+            and strategy researching by leveraging data engineering stacks such as Pandas and Jupyter"
           />
         </li>
       </ul>
@@ -73,33 +98,32 @@ export function Segantii() {
 export function BankOfAmerica() {
   return (
     <div>
-      <Title text="Quantitative Services Analyst" />
+      <Title text="Python Developer" />
       <Subtitle text="Bank of America" />
       <ul>
         <li>
           <BodyText
             text="Proposed and implemented a web dashboard using Python, 
-            JavaScript and HTML to replace a manual email report that was done 3 times a day, 
-            15 minutes each"
+          JavaScript and HTML to replace a manual report, saving 45 minutes daily"
           />
         </li>
         <li>
           <BodyText
-            text="Revamped a product-searching tool from a VBA script to a Python GUI, 
-            cutting queries from 10 minutes to less than 10 seconds"
+            text="Created a web page that allows users to manage tagging rules 
+            with JavaScript and SharePoint Lists, powering a Python script 
+            that helped tag 99% of trades daily"
+          />
+        </li>
+        <li>
+          <BodyText
+            text="Revamped a product-searching tool using an 
+            in-house Python GUI library, improving query time by 98%"
           />
         </li>
         <li>
           <BodyText
             text="Aggregated activity logs using Pandas which was used for a Tableau 
-            dashboard for management to evaluate employee activity"
-          />
-        </li>
-        <li>
-          <BodyText
-            text="Created a web page that uses JavaScript to manipulate a SharePoint List 
-            that powers a Python rule-based tagging script, helping users centralize and 
-            document identified rules and replace a manual tagging process"
+          dashboard for management to evaluate employee activity"
           />
         </li>
         <li>
