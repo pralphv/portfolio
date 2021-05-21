@@ -55,8 +55,8 @@ export function Segantii() {
         </li>
         <li>
           <BodyText
-            text="Integrated Microsoft Graph API to allow creating highly customized 
-            calendars in the browser while remaining synchronized with Outlook"
+            text="Integrated Microsoft Graph API to create a re-usable calendar component that 
+            synchronizes with Outlook automatically, greatly decreasing user development time"
           />
         </li>
         <li>
