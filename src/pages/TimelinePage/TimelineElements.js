@@ -35,6 +35,15 @@ export function Cfa() {
   );
 }
 
+export function Aws() {
+  return (
+    <div>
+      <Title text="AWS" />
+      <BodyText text="Passed AWS Certified Developer - Associate" />
+    </div>
+  );
+}
+
 export function Segantii() {
   return (
     <div>

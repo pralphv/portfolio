@@ -24,7 +24,7 @@ import {
   HKPORTFOLIOANALYSIS_CONTENT,
   LOL_15_FF_CONTENT,
   ENSOU_CONTENT,
-  BUDDY_CHAMP_CONTENT
+  BUDDY_CHAMP_CONTENT,
 } from "./constants";
 
 const images = [
@@ -116,7 +116,7 @@ const dialogsMap = {
     gifPath: "images/gifs/ensou.gif",
     github: GITHUB_ENSOU,
     url: ENSOU,
-    techStack: "TypeScript Firebase",
+    techStack: "TypeScript Firebase AWS Lambda",
     youtubeUrl: "https://www.youtube.com/watch?v=Jj1ZJEFVpMk",
   },
 };

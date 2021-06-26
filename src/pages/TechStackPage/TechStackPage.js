@@ -16,17 +16,11 @@ import {
   DiRedis,
   DiPhotoshop,
   DiDjango,
+  DiGithubBadge,
+  DiHeroku
 } from "react-icons/di";
-import { SiFlask, SiFirebase, SiTypescript } from "react-icons/si";
-
-const useStyles = makeStyles((theme) => ({
-  title: {
-    margin: theme.spacing(2),
-    textTransform: "uppercase",
-    letterSpacing: "0.2em",
-    fontWeight: "300",
-  },
-}));
+import { SiFlask, SiFirebase, SiTypescript, SiGitlab, SiRedux } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 
 const frontEndIcons = [
   { isIcon: true, icon: DiHtml5 },
@@ -34,6 +28,7 @@ const frontEndIcons = [
   { isIcon: true, icon: DiJavascript1 },
   { isIcon: true, icon: SiTypescript },
   { isIcon: true, icon: DiReact },
+  { isIcon: true, icon: SiRedux },
 ];
 
 const backEndIcons = [
@@ -50,19 +45,26 @@ const backEndIcons = [
   { isIcon: true, icon: SiFlask },
   { isIcon: true, icon: DiDjango },
 ];
+
 const dbIcons = [
   { isIcon: true, icon: DiPostgresql },
   { isIcon: true, icon: DiMsqlServer },
-  { isIcon: true, icon: SiFirebase },
   { isIcon: true, icon: DiMongodb },
   { isIcon: true, icon: DiRedis },
+];
+
+const toolIcons = [
+  { isIcon: true, icon: SiGitlab },
+  { isIcon: true, icon: DiGithubBadge },
+  { isIcon: true, icon: SiFirebase },
+  { isIcon: true, icon: FaAws },
+  { isIcon: true, icon: DiHeroku },
 ];
 
 const miscIcons = [{ isIcon: true, icon: DiPhotoshop }];
 
 export default function TechStackPage() {
-  const classes = useStyles();
-  const allIcons = [frontEndIcons, backEndIcons, dbIcons, miscIcons];
+  const allIcons = [frontEndIcons, backEndIcons, dbIcons, toolIcons, miscIcons];
   return (
     <div>
       <PageTitle text="Tech Stack" />
