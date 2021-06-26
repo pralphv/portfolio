@@ -35,11 +35,9 @@ export default function AboutMePage() {
             align="center"
           >
             Despite graduating with an Accounting & Finance Degree, my passion
-            in technology led me to pursue a career in technology. Knowing the
-            disadvantage that I have put myself in by not having a Computer
-            Science degree, I work hard to close the gap between me and Computer
-            Science graduates. I am now confident to say that I am a competent
-            developer.
+            in technology led me to pursue a career in technology. After many years
+            in Hong Kong, I have decided to move to Canada to pursue a career in 
+            Software Engineering.
           </Typography>
         </Grid>
         <Grid item>
@@ -48,10 +46,8 @@ export default function AboutMePage() {
             variant="body2"
             align="center"
           >
-            Currently, I am working in a hedge fund as a full-stack developer
-            with a small team. Workload is high, fast-paced and sometimes
-            stressful, but ultimately rewarding as I am able to hone my skills
-            and make meaningful contributions.
+            My skillset focuses on full-stack web development, maining in Python and React. 
+            I am always happy to pick up new frameworks or languages.
           </Typography>
         </Grid>
         <Grid item>
